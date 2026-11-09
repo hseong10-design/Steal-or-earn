@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#181829">
+  <meta name="description" content="하나의 기기로 즐기는 둘만의 심리전. 훔칠까, 지킬까, 돈을 벌까? 5라운드의 귀여운 도둑 게임!">
+  <title>몰래 도둑질 🥷💰 · Steal or Guard</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E🥷%3C/text%3E%3C/svg%3E">
+  <style>
+:root{color-scheme:dark;--bg:#181829;--panel:#232336;--line:#39384b;--muted:#aaa8bd;--cream:#fff6df;--yellow:#f7d976;--pink:#f5a5c5;--lavender:#bdb0f1;--mint:#a6dbc7;font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);min-width:280px;background-image:radial-gradient(ellipse at 25% 30%,#30234155,transparent 55%)}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:disabled{cursor:default;opacity:.6}button:focus-visible,input:focus-visible{outline:3px solid var(--yellow);outline-offset:5px}button{transition:transform .15s,background .15s}button:active:not(:disabled){transform:translateY(3px) scale(.985)}button:hover:not(:disabled){filter:brightness(1.06)}.site-shell{width:min(1120px,100% - 80px);margin:auto}.topbar{height:108px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:19px;font-weight:850;letter-spacing:-.6px}.brand-icon{display:grid;place-items:center;background:#333044;border:1px solid #50455d;width:44px;height:44px;border-radius:15px;font-size:26px;transform:rotate(-6deg)}.brand small{display:block;color:var(--muted);font-size:8px;letter-spacing:2.6px;margin-top:6px;font-weight:650}.quiet{background:transparent;color:var(--cream);border:1px solid var(--line);border-radius:999px;min-height:42px;padding:10px 17px;font-size:13px}.rules-open span{margin-right:5px;color:var(--yellow)}main{min-height:680px;padding:45px 0 38px}main:focus{outline:none}.eyebrow{font-size:10px;font-weight:800;letter-spacing:2.5px;color:var(--yellow)}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #63574766;background:#f7d9760a;border-radius:30px;padding:9px 13px;font-size:11px;letter-spacing:.2px;color:#e1cba2}.pill i{display:inline-block;width:6px;height:6px;background:var(--yellow);border-radius:50%}.intro-grid{display:grid;grid-template-columns:1.13fr 1fr;gap:66px;align-items:center}.hero{position:relative}.hero h1{font-size:clamp(40px,4.4vw,58px);line-height:1.2;letter-spacing:-3.5px;margin:19px 0 17px;font-weight:900}.hero h1 span{color:var(--pink)}.hero-copy{font-size:15px;line-height:1.85;color:#b8b4c9;margin:0}.hero-copy strong{font-weight:600;color:#e0d8e8}.scene{display:block;width:100%;max-width:440px;height:auto;margin:5px auto -14px}.scene .float{animation:bob 4s ease-in-out infinite}.scene .float.second{animation-delay:-2s}.setup-card{padding:30px 31px 25px;background:linear-gradient(140deg,#2b293f,#242337);border:1px solid #494254;border-radius:24px;box-shadow:0 18px 45px #09091222;position:relative}.card-tag{position:absolute;right:24px;top:-13px;background:var(--pink);color:#3d2638;transform:rotate(5deg);padding:7px 12px;border:3px solid var(--bg);border-radius:8px;font-size:10px;font-weight:900;letter-spacing:1px}.setup-card h2{font-size:25px;letter-spacing:-1px;margin:12px 0 9px}.subtext{color:var(--muted);font-size:13px;line-height:1.7;margin:0}.name-field{display:block;margin-top:24px}.name-label{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;margin-bottom:10px}.player-dot{display:inline-grid;place-items:center;color:#35273b;background:var(--pink);width:24px;height:24px;border-radius:8px;font-size:10px;font-weight:900;flex-shrink:0}.player-dot.p2{background:var(--lavender)}input{display:block;width:100%;height:52px;background:#1c1c2e;border:1px solid #454055;border-radius:11px;color:var(--cream);padding:0 15px;min-width:0;font-size:14px}input::placeholder{color:#7c788e}.start-money{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--muted);padding:21px 1px}.start-money b{color:var(--yellow);font-size:14px}.primary{border:0;border-radius:12px;background:var(--yellow);color:#30273a;padding:17px 22px;min-height:55px;width:100%;display:flex;justify-content:center;align-items:center;gap:15px;font-weight:850;font-size:15px;box-shadow:0 4px 0 #b38e47}.primary span{font-size:20px;line-height:1}.private-note{text-align:center;font-size:10px;color:var(--muted);margin:17px 0 0;line-height:1.6}.mini-rule-heading{display:flex;align-items:center;gap:12px;margin:30px 0 15px;color:#c2bbd1;font-size:12px;font-weight:700}.mini-rule-heading:after{content:"";height:1px;background:var(--line);flex:1}.action-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.action-card{border:1px solid #40394e;border-radius:16px;background:#242135;padding:18px;display:flex;gap:14px;align-items:flex-start}.action-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;font-size:27px;background:#f5a5c512;flex-shrink:0}.guard .action-icon{background:#bdb0f112}.earn .action-icon{background:#f7d97612}.action-card h3{font-size:15px;margin:2px 0 8px;color:var(--pink)}.action-card.guard h3{color:var(--lavender)}.action-card.earn h3{color:var(--yellow)}.action-card p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}.action-card b{color:#dcd5e8;font-weight:650}.under-rules{text-align:center;color:#8e879f;font-size:11px;margin-top:17px}footer{min-height:77px;border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;font-size:11px;color:#928b9f}.little-star{color:var(--pink)}.footer-right{margin-left:auto;font-size:8px;letter-spacing:2px}.footer-right span{color:var(--pink);font-size:13px;margin-left:6px}.play-layout{max-width:810px;margin:auto}.round-top{display:flex;justify-content:space-between;align-items:center;margin:1px 0 24px}.round-top h2{font-size:17px;margin:0}.round-top h2 span{color:var(--muted);font-weight:400;font-size:12px;margin-left:8px}.progress{display:flex;gap:7px}.progress i{width:23px;height:5px;background:#393346;border-radius:5px}.progress i.done{background:var(--yellow)}.progress i.current{background:var(--pink)}.scoreboard{display:grid;grid-template-columns:1fr 1fr;gap:15px}.score-card{padding:17px 20px;border:1px solid #494055;background:var(--panel);border-radius:15px;display:flex;align-items:center;gap:10px;min-width:0}.score-name{font-size:13px;font-weight:700;overflow-wrap:anywhere;min-width:0}.score-card .money{font-size:21px;margin-left:auto;font-weight:850;color:var(--yellow);white-space:nowrap}.money small{font-size:11px;font-weight:500;margin-left:3px}.turn-intro{text-align:center;padding:40px 0 26px}.turn-intro h1{font-size:30px;line-height:1.4;letter-spacing:-1.3px;margin:12px 0;overflow-wrap:anywhere}.turn-intro h1 .name{color:var(--pink)}.turn-intro.p2 h1 .name{color:var(--lavender)}.choose-grid .action-card{display:block;text-align:left;color:var(--cream);width:100%;min-height:225px;padding:25px;position:relative;box-shadow:0 4px 0 #0f101b}.choose-grid .action-card:hover:not(:disabled){transform:translateY(-5px);border-color:var(--pink)}.choose-grid .guard:hover:not(:disabled){border-color:var(--lavender)}.choose-grid .earn:hover:not(:disabled){border-color:var(--yellow)}.choose-grid .action-icon{width:62px;height:62px;font-size:36px;margin-bottom:17px}.choose-grid h3{font-size:21px;margin-bottom:9px}.choose-grid p{font-size:12px}.choice-arrow{position:absolute;right:20px;top:24px;color:var(--muted)}.secret-hint{text-align:center;color:var(--muted);font-size:11px;line-height:1.7;margin:25px 0}.handoff{max-width:490px;margin:48px auto 25px;text-align:center}.handoff-graphic{width:130px;height:130px;background:#2c263e;border:1px dashed #6d577d;border-radius:35px;display:grid;place-items:center;margin:0 auto 25px;font-size:65px;transform:rotate(-7deg);box-shadow:12px 12px 0 #222032}.handoff h1{font-size:30px;line-height:1.6;letter-spacing:-1px;overflow-wrap:anywhere;margin:15px 0}.handoff h1 strong{color:var(--pink)}.handoff .primary{max-width:360px;margin:30px auto 0}.secret-stamp{display:inline-block;font-size:11px;color:var(--mint);border:1px solid #a6dbc744;border-radius:30px;padding:8px 12px;margin-bottom:20px}.result-intro{text-align:center;margin:32px 0 24px}.result-intro h1{font-size:29px;margin:10px 0;letter-spacing:-1px}.results{display:grid;grid-template-columns:1fr 1fr;gap:15px}.result-card{min-width:0;text-align:center;padding:25px 18px;background:var(--panel);border:1px solid var(--line);border-radius:19px}.result-card .score-name{margin:0 0 20px}.reveal-icon{display:block;font-size:50px;margin-bottom:12px;animation:reveal .4s both}.result-card h2{font-size:19px;margin:0 0 16px}.delta{font-size:25px;font-weight:850;color:var(--mint);animation:money-pop .7s both}.delta.loss{color:var(--pink)}.delta.zero{color:var(--muted);font-size:19px}.result-total{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.result-total b{font-size:17px;color:var(--yellow);margin-left:7px}.result-next{max-width:370px;margin:28px auto 0}.final-intro{position:relative;text-align:center;padding:30px 0 20px}.trophy{font-size:75px;display:block;animation:bob 3s infinite}.final-intro h1{font-size:36px;line-height:1.4;letter-spacing:-1.2px;overflow-wrap:anywhere;margin:18px 0 10px}.final-intro h1 strong{color:var(--yellow)}.final-score{margin:20px auto 0;max-width:600px}.final-score .result-card{position:relative;padding:25px 15px}.final-score .winner{border-color:var(--yellow);background:#f7d9760a}.winner-label{display:inline-block;background:var(--yellow);color:#35283d;padding:5px 10px;font-size:9px;letter-spacing:1px;font-weight:900;border-radius:20px;position:absolute;top:-11px;left:50%;transform:translateX(-50%)}.final-money{font-size:34px;color:var(--yellow);margin:20px 0 0;font-weight:850}.final-money small{font-size:14px}.confetti{position:absolute;inset:0;overflow:hidden;pointer-events:none}.confetti i{position:absolute;left:var(--x);top:-10px;width:7px;height:13px;border-radius:2px;background:var(--c);animation:confetti 2.8s var(--delay) ease-out both}.enter{animation:enter .3s both}dialog{width:min(610px,calc(100% - 28px));max-height:calc(100dvh - 40px);padding:25px 27px;border:1px solid #5c4c67;border-radius:22px;background:#252236;color:var(--cream);box-shadow:0 25px 90px #0008}dialog::backdrop{background:#0a0a16c9;backdrop-filter:blur(5px)}.dialog-head{display:flex;align-items:center;justify-content:space-between}dialog h2{font-size:23px;letter-spacing:-1px;margin-top:16px}dialog p{font-size:13px;line-height:1.9;color:#c0b9cf}dialog b{color:var(--yellow)}.rule-flow{display:flex;justify-content:space-between;gap:5px;background:#1b192b;padding:13px 10px;border-radius:10px;margin:18px 0;font-size:11px;color:var(--pink)}table{width:100%;border-collapse:collapse;font-size:11px;text-align:center;table-layout:fixed}caption{text-align:left;color:var(--muted);font-size:10px;padding-bottom:12px}th,td{border:1px solid #474054;padding:13px 2px}th{font-weight:650;color:var(--yellow);background:#302b40}th:first-child{width:25%}dialog p.rule-note{font-size:11px;margin:17px 0 22px}body.modal-open{overflow:hidden}@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@keyframes bob{50%{transform:translateY(-7px)}}@keyframes reveal{from{opacity:0;transform:scale(.6) rotate(-15deg)}to{opacity:1;transform:scale(1)}}@keyframes money-pop{0%{opacity:0;transform:translateY(9px)}65%{transform:translateY(-3px)}100%{opacity:1;transform:translateY(0)}}@keyframes confetti{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(310px) rotate(420deg);opacity:0}}
+@media(min-width:1200px){main{padding-top:50px}.intro-grid{gap:80px}}
+@media(max-width:900px){.site-shell{width:calc(100% - 48px)}.intro-grid{gap:30px}.hero h1{font-size:43px;letter-spacing:-2.7px}.setup-card{padding:26px 23px}.hero-copy{font-size:13px}.action-card{gap:10px;padding:15px}.action-icon{width:36px;height:36px;font-size:23px}.action-card p{font-size:10px}.choose-grid .action-card{padding:20px}.choose-grid p{font-size:11px}}
+@media(max-width:650px){.site-shell{width:calc(100% - 36px)}.topbar{height:85px}.brand{font-size:16px;gap:9px}.brand-icon{width:36px;height:36px;font-size:23px;border-radius:12px}.brand small{font-size:7px;letter-spacing:1.8px}.quiet{font-size:11px;padding:10px 12px}.intro-grid{grid-template-columns:1fr;gap:25px}main{padding:28px 0;min-height:610px}.hero{text-align:center}.hero h1{font-size:43px;letter-spacing:-2.5px;margin:16px 0 12px}.hero-copy{font-size:12px}.scene{max-width:305px;margin:-4px auto -19px}.setup-card{padding:25px 23px}.setup-card h2{font-size:23px}.name-field{margin-top:19px}.setup-card .eyebrow{font-size:9px}.action-grid{gap:9px}.mini-rules{grid-template-columns:1fr}.mini-rules .action-card{padding:16px 18px;gap:14px}.mini-rules .action-icon{width:45px;height:45px;font-size:27px}.mini-rules .action-card p{font-size:11px}.mini-rules .action-card h3{margin-top:0;margin-bottom:5px}.mini-rules .action-card p br{display:none}.under-rules{font-size:10px;line-height:1.8}footer{font-size:10px;min-height:67px}.footer-right{font-size:7px;letter-spacing:1px}.round-top{margin-bottom:18px}.round-top h2{font-size:15px}.progress i{width:18px}.scoreboard{gap:9px}.score-card{padding:13px 10px;gap:6px;flex-wrap:wrap}.score-card .score-name{font-size:11px;flex:1}.score-card .money{font-size:21px;width:100%;text-align:right}.score-card .player-dot{width:21px;height:21px;font-size:9px;border-radius:6px}.turn-intro{padding:28px 0 22px}.turn-intro h1{font-size:24px}.turn-intro .subtext{font-size:11px}.choose-grid{grid-template-columns:1fr}.choose-grid .action-card{min-height:113px;padding:18px 18px 18px 95px}.choose-grid .action-icon{position:absolute;left:17px;top:23px;width:59px;height:59px;margin:0;font-size:35px}.choose-grid h3{font-size:19px;margin-top:0;margin-bottom:7px}.choose-grid p{font-size:11px}.choose-grid .choice-arrow{top:18px;right:17px}.secret-hint{font-size:10px;margin:20px 0 0}.handoff{margin-top:48px}.handoff h1{font-size:26px}.handoff-graphic{width:110px;height:110px;font-size:55px}.handoff .subtext{font-size:12px}.result-intro h1{font-size:25px}.result-intro .subtext{font-size:12px}.result-card{padding:22px 10px}.results{gap:10px}.result-card .score-name{font-size:12px}.reveal-icon{font-size:43px}.result-card h2{font-size:17px}.delta{font-size:24px}.result-total{font-size:10px}.result-total b{font-size:15px;margin-left:2px}.final-intro h1{font-size:29px}.final-money{font-size:29px}.final-score .result-card{padding:24px 10px}dialog{padding:20px 16px}dialog h2{font-size:21px}table{font-size:10px}th,td{padding:12px 1px}.rule-flow{font-size:10px}.rule-note{font-size:10px}}
+@media(max-width:340px){.site-shell{width:calc(100% - 24px)}.hero h1{font-size:37px}.setup-card{padding:23px 17px}.footer-right{display:none}.score-name{font-size:10px}.choose-grid .action-card{padding-left:87px}.choose-grid .action-icon{left:14px;width:55px;height:55px}.choose-grid p{font-size:10px}.result-total b{display:block;margin:4px 0 0}}
+.save-retry{margin:12px auto 0;display:block}.save-retry[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+</style>
+  
+  
+  
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon" aria-hidden="true">🥷</span><span>몰래 도둑질<small>STEAL OR GUARD</small></span></div>
+      <button class="rules-open quiet" type="button"><span aria-hidden="true">ⓘ</span> 게임 방법</button>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <footer><span class="little-star" aria-hidden="true">✦</span> 둘이서, 한 기기로, 살짝 얄밉게.<span class="footer-right">MADE FOR TWO <span aria-hidden="true">♡</span></span></footer>
+  </div>
+  <dialog id="rules" aria-labelledby="rules-title">
+    <div class="dialog-head"><span class="eyebrow">HOW TO PLAY</span><button class="quiet" id="close-rules" aria-label="게임 방법 닫기">✕</button></div>
+    <h2 id="rules-title">단순한 규칙, 귀여운 배신.</h2>
+    <p>각자 <b>100원</b>으로 시작해요. 한 기기를 번갈아 보며 비밀리에 선택하고, <b>5라운드</b> 후 돈이 더 많으면 승리! 같으면 무승부예요.</p>
+    <div class="rule-flow"><span>① 혼자 선택</span><span>② 기기 넘기기</span><span>③ 함께 공개</span></div>
+    <table><caption>행동별 자금 변화 · 칸 안의 순서: 나 / 상대</caption><thead><tr><th scope="col">나 ↓ 상대 →</th><th scope="col">🥷 훔치기</th><th scope="col">🛡️ 지키기</th><th scope="col">💰 돈 벌기</th></tr></thead><tbody><tr><th scope="row">🥷 훔치기</th><td>−10 / −10</td><td>−15 / +15</td><td>+25 / −25</td></tr><tr><th scope="row">🛡️ 지키기</th><td>+15 / −15</td><td>0 / 0</td><td>0 / +20</td></tr><tr><th scope="row">💰 돈 벌기</th><td>−25 / +25</td><td>+20 / 0</td><td>+20 / +20</td></tr></tbody></table>
+    <p class="rule-note">돈은 0원 아래로 내려가지 않아요. 훔치기와 반격은 상대에게 남은 돈만큼만 가져와요. 돈이 없어도 끝까지 플레이할 수 있어요.</p>
+    <button class="primary" id="understood">좋아, 이해했어! <span aria-hidden="true">✓</span></button>
+  </dialog>
+  <noscript>게임을 실행하려면 브라우저에서 JavaScript를 활성화해주세요.</noscript>
+<script>
+/* Pure game rules; also usable by Node without a browser. */
+(function (root) {
+  'use strict';
+  const actions = ['steal', 'guard', 'earn'];
+  function settle(money, choices) {
+    if (!Array.isArray(money) || money.length !== 2 || money.some(n => !Number.isSafeInteger(n) || n < 0)) throw new Error('Invalid money');
+    if (!Array.isArray(choices) || choices.length !== 2 || choices.some(a => !actions.includes(a))) throw new Error('Invalid choices');
+    const next = money.slice();
+    const [a, b] = choices;
+    function transfer(from, to, amount) { const actual = Math.min(next[from], amount); next[from] -= actual; next[to] += actual; }
+    if (a === 'steal' && b === 'steal') { next[0] = Math.max(0, next[0] - 10); next[1] = Math.max(0, next[1] - 10); }
+    else if (a === 'steal') transfer(b === 'guard' ? 0 : 1, b === 'guard' ? 1 : 0, b === 'guard' ? 15 : 25);
+    else if (b === 'steal') transfer(a === 'guard' ? 1 : 0, a === 'guard' ? 0 : 1, a === 'guard' ? 15 : 25);
+    else { if (a === 'earn') next[0] += 20; if (b === 'earn') next[1] += 20; }
+    return { money: next, delta: next.map((n, i) => n - money[i]) };
+  }
+  function initial() { return { phase: 'setup', names: ['플레이어 1', '플레이어 2'], money: [100, 100], round: 1, player: 0, choices: [null, null], delta: [0, 0] }; }
+  function reduce(s, event) {
+    if (event.type === 'reset' && s.phase === 'final') return initial();
+    if (event.type === 'start' && s.phase === 'setup') return { ...initial(), phase: 'choose', names: [0, 1].map(i => String(event.names?.[i] || '').trim().slice(0, 16) || `플레이어 ${i + 1}`) };
+    if (event.type === 'ready' && s.phase === 'handoff') return { ...s, phase: 'choose' };
+    if (event.type === 'choose' && s.phase === 'choose' && actions.includes(event.action)) {
+      const choices = s.choices.slice(); choices[s.player] = event.action;
+      if (s.player === 0) return { ...s, choices, player: 1, phase: 'handoff' };
+      return { ...s, ...settle(s.money, choices), choices, phase: 'reveal' };
+    }
+    if (event.type === 'next' && s.phase === 'reveal') {
+      if (s.round === 5) return { ...s, phase: 'final' };
+      return { ...s, round: s.round + 1, phase: 'handoff', player: 0, choices: [null, null], delta: [0, 0] };
+    }
+    return s;
+  }
+  function winner(money) { return money[0] === money[1] ? null : money[0] > money[1] ? 0 : 1; }
+  const api = Object.freeze({ settle, initial, reduce, winner });
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.StealOrGuard = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+</script>
+<script>
+(function (root) {
+  'use strict';
+  function create(options = {}) {
+    const fetcher = options.fetch || root.fetch?.bind(root);
+    const crypto = options.crypto || root.crypto;
+    const protocol = options.protocol || root.location?.protocol;
+    const enabled = ['https:', 'http:'].includes(protocol) && !!fetcher && !!crypto?.getRandomValues;
+    let game = null;
+    let notify = () => {};
+    function uuid() {
+      const bytes = crypto.getRandomValues(new Uint8Array(16));
+      bytes[6] = (bytes[6] & 15) | 64; bytes[8] = (bytes[8] & 63) | 128;
+      const hex = Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+      return `${hex.slice(0,8)}-${hex.slice(8,12)}-${hex.slice(12,16)}-${hex.slice(16,20)}-${hex.slice(20)}`;
+    }
+    return {
+      get enabled() { return enabled; },
+      get status() { return enabled && game ? game.status : 'unavailable'; },
+      onChange(fn) { notify = fn; },
+      start(names) { game = enabled ? { id:uuid(), names:names.slice(), rounds:[], status:'idle' } : null; },
+      record(round, choices) { if (game && round === game.rounds.length + 1 && round <= 5) game.rounds.push(choices.slice()); },
+      reset() { game = null; },
+      async save() {
+        if (!game || game.rounds.length !== 5 || ['saving','saved'].includes(game.status)) return;
+        const current = game;
+        current.status = 'saving'; notify();
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(),8000);
+        try {
+          const response = await fetcher('/api/games', {
+            method:'POST', headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({id:current.id,names:current.names,rounds:current.rounds}),
+            signal:controller.signal, credentials:'same-origin', keepalive:true
+          });
+          const result = await response.json();
+          if (!response.ok && result?.error === 'supabase_setup_required') { current.status = 'setup'; return; }
+          if (!response.ok || !result?.saved || result.id !== current.id) throw new Error('save_failed');
+          current.status = 'saved';
+        } catch { current.status = 'failed'; }
+        finally { clearTimeout(timeout); if (game === current) notify(); }
+      }
+    };
+  }
+  const api = Object.freeze({create});
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.GameRecords = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+</script>
+<script>
+(function () {
+  'use strict';
+  const { initial, reduce, winner } = StealOrGuard;
+  const app = document.getElementById('app');
+  const dialog = document.getElementById('rules');
+  const meta = {
+    steal: { icon: '🥷', name: '훔치기', copy: '돈 버는 상대에게 <b>+25원</b><br>들키면 반대로 <b>−15원</b>' },
+    guard: { icon: '🛡️', name: '지키기', copy: '훔치러 온 상대에게 <b>+15원</b><br>아무도 안 오면 조용히 패스' },
+    earn: { icon: '💰', name: '돈 벌기', copy: '무사히 지나가면 <b>+20원</b><br>도둑을 만나면 <b>−25원</b>' }
+  };
+  let state = initial();
+  const records = typeof GameRecords === 'undefined' ? null : GameRecords.create();
+  let timer;
+  let unlockAt = 0;
+  let lastFocus;
+  const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const dot = i => `<span class="player-dot ${i ? 'p2' : ''}">P${i + 1}</span>`;
+  const named = i => esc(state.names[i]);
+  function art() {
+    return `<svg class="scene" viewBox="0 0 460 225" role="img" aria-label="분홍 도둑과 보라 도둑이 동전 주머니를 노리는 귀여운 그림">
+    <defs><g id="coin"><ellipse rx="14" ry="15" fill="#efbc54" stroke="#191929" stroke-width="3"/><ellipse cx="-2" cy="-1" rx="10" ry="12" fill="#ffe297"/><path d="M-2-7v13m4-10h-5m5 7h-5" stroke="#c2923b" stroke-width="2" stroke-linecap="round"/></g></defs>
+    <ellipse cx="228" cy="194" rx="188" ry="15" fill="#111222"/>
+    <path d="M44 92l4-11 4 11 11 4-11 4-4 11-4-11-11-4zM375 40l3-8 3 8 8 3-8 3-3 8-3-8-8-3z" fill="#f7d976"/>
+    <path d="M79 28l2-5 2 5 5 2-5 2-2 5-2-5-5-2zM412 126l2-5 2 5 5 2-5 2-2 5-2-5-5-2z" fill="#f5a5c5"/>
+    <circle cx="52" cy="146" r="3" fill="#a79acb"/><circle cx="329" cy="23" r="3" fill="#a79acb"/><path d="M187 46q9-11 17-4" stroke="#8c789f" stroke-width="2" fill="none" stroke-dasharray="3 5"/>
+    <g class="float"><g transform="translate(68 54) rotate(-10 65 70)">
+      <path d="M32 96q-25 3-18 22 9 10 22-2" fill="#e99cbb" stroke="#191929" stroke-width="4"/>
+      <path d="M36 80q-15 12-10 51l25 7 33-3 15-11q-4-37-23-44" fill="#f1a2c1" stroke="#191929" stroke-width="4"/>
+      <path d="M34 126l-4 15q9 8 23 0l3-10m20-1 3 13q13 5 22-4l-10-17" fill="#2b283e" stroke="#191929" stroke-width="4"/>
+      <path d="M87 88q17-9 26 6 4 11-9 15l-16-6" fill="#f6b8ce" stroke="#191929" stroke-width="4"/>
+      <path d="M23 38 24 9q1-8 10-2l21 17m37 11 9-25q3-8 9 0l11 35" fill="#efacca" stroke="#191929" stroke-width="4" stroke-linejoin="round"/>
+      <path d="m29 18 13 13-15 4m76-13-3 14 11 1" fill="#ce739c"/>
+      <path d="M20 53q-3-34 46-34 48 0 51 35 3 39-47 40-51 0-50-41" fill="#f6b8ce" stroke="#191929" stroke-width="4"/>
+      <path d="M26 45q17-14 39-5 25-9 47 6l-1 24q-25 15-45 1-18 13-40-2z" fill="#282639"/>
+      <ellipse cx="46" cy="56" rx="11" ry="10" fill="#fff4dd"/><ellipse cx="87" cy="55" rx="11" ry="10" fill="#fff4dd"/><ellipse cx="50" cy="57" rx="4" ry="6" fill="#282639"/><ellipse cx="91" cy="56" rx="4" ry="6" fill="#282639"/>
+      <path d="m62 70 5 3 5-3m-5 3v4q6 6 12-1" fill="none" stroke="#322338" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="32" cy="74" rx="7" ry="3" fill="#e781a7"/><path d="m43 94 22 7-10 9-19-10m31 2 18-8-3 19-13-4" fill="#ce739c" stroke="#191929" stroke-width="3"/>
+    </g></g>
+    <g class="float second"><g transform="translate(278 55) rotate(10 62 72)">
+      <path d="M91 100q29-7 30 13-3 12-26 5" fill="#9183ba" stroke="#191929" stroke-width="4"/>
+      <path d="M35 80q-16 17-12 50l27 9 37-5 11-10q-3-35-22-44" fill="#a99bd5" stroke="#191929" stroke-width="4"/>
+      <path d="m30 125-9 14q9 10 24 4l7-13m25 1 2 12q14 7 24-4l-10-15" fill="#2b283e" stroke="#191929" stroke-width="4"/>
+      <path d="M29 89q-20-11-28 4-4 14 12 17l20-10" fill="#bdb0e9" stroke="#191929" stroke-width="4"/>
+      <path d="M19 40 18 11q0-9 10-3l22 15m35 8 17-23q5-7 9 2l5 33" fill="#a99bd5" stroke="#191929" stroke-width="4" stroke-linejoin="round"/>
+      <path d="m24 20 13 13-15 3m79-16-8 15 15 1" fill="#796a9e"/>
+      <path d="M13 53q-3-34 49-34 48 0 53 35 5 39-48 40-53-1-54-41" fill="#bdb0e9" stroke="#191929" stroke-width="4"/>
+      <path d="M18 45q20-14 44-5 25-9 47 6v23q-25 15-46 2-23 13-44-2z" fill="#282639"/>
+      <ellipse cx="41" cy="56" rx="11" ry="10" fill="#fff4dd"/><ellipse cx="83" cy="56" rx="11" ry="10" fill="#fff4dd"/><ellipse cx="37" cy="57" rx="4" ry="6" fill="#282639"/><ellipse cx="79" cy="57" rx="4" ry="6" fill="#282639"/>
+      <path d="m58 70 5 3 5-3m-5 3v4q-7 6-13-1" fill="none" stroke="#322338" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="99" cy="75" rx="7" ry="3" fill="#9984c2"/><path d="m41 94 20 8-9 11-18-11m28 0 21-8-3 19-15-4" fill="#796a9e" stroke="#191929" stroke-width="3"/>
+    </g></g>
+    <g transform="translate(229 143)"><path d="m-22-32 6 18q-42 22-39 50 1 22 57 23 51-1 51-25-1-29-36-48l8-19q-26 10-47 1" fill="#f3cd76" stroke="#191929" stroke-width="4" stroke-linejoin="round"/><path d="M-17-13q17 5 35-1" stroke="#a07943" stroke-width="5" stroke-linecap="round"/><path d="M-32 21q-8 11-3 17" fill="none" stroke="#ffe6a8" stroke-width="5" stroke-linecap="round"/><text x="-11" y="34" font-size="34" font-weight="900" fill="#a97a3f">₩</text></g>
+    <use href="#coin" x="194" y="51" transform="rotate(-22 194 51)"/><use href="#coin" x="260" y="27" transform="rotate(15 260 27)"/><use href="#coin" x="282" y="191" transform="rotate(65 282 191)"/><use href="#coin" x="173" y="192" transform="rotate(75 173 192)"/>
+    </svg>`;
+  }
+  function actionCards(buttons) {
+    return Object.entries(meta).map(([key, m]) => `<${buttons ? 'button type="button" data-action="' + key + '"' : 'article'} class="action-card ${key}"><span class="action-icon" aria-hidden="true">${m.icon}</span><div><h3>${m.name}</h3><p>${m.copy}</p></div>${buttons ? '<span class="choice-arrow" aria-hidden="true">↗</span></button>' : '</article>'}`).join('');
+  }
+  function setup() {
+    return `<section class="intro-grid enter"><div class="hero"><span class="pill"><i></i> LOCAL 2 PLAYER GAME</span><h1>너의 동전,<br><span>살짝 탐나는데?</span></h1><p class="hero-copy">훔칠까, 지킬까, 모른 척 돈을 벌까?<br><strong>가장 가까운 사람과 펼치는 가장 귀여운 심리전.</strong></p>${art()}</div>
+    <section class="setup-card"><span class="card-tag">JUST THE TWO OF US</span><span class="eyebrow">READY, PARTNER?</span><h2>오늘의 공범을 소개해요</h2><p class="subtext">기기는 하나, 속마음은 둘. 준비됐나요?</p><form id="start-form"><label class="name-field"><span class="name-label">${dot(0)} 플레이어 1</span><input id="p1" name="p1" maxlength="16" placeholder="이름을 입력해주세요" autocomplete="off" enterkeyhint="next"></label><label class="name-field"><span class="name-label">${dot(1)} 플레이어 2</span><input id="p2" name="p2" maxlength="16" placeholder="이름을 입력해주세요" autocomplete="off" enterkeyhint="go"></label><div class="start-money"><span>각자 100원으로 시작해요</span><b>💰 100원</b></div><button class="primary" type="submit">둘이서 시작하기 <span aria-hidden="true">→</span></button></form><p class="private-note">🔒 한 기기를 번갈아 보며 비밀리에 선택해요<br>${records?.enabled ? '완료한 게임의 이름과 결과는 기록으로 저장돼요.' : '파일 실행 중에는 기록이 서버에 저장되지 않아요.'}</p></section></section>
+    <section class="enter"><div class="mini-rule-heading">세 가지 선택, 다섯 번의 눈치 싸움</div><div class="action-grid mini-rules">${actionCards(false)}</div><p class="under-rules">총 5라운드 · 돈이 더 많은 사람이 승리 · 둘 다 훔치면 각각 −10원</p></section>`;
+  }
+  function roundTop() { return `<div class="round-top"><h2>ROUND ${String(state.round).padStart(2, '0')} <span>/ 05</span></h2><div class="progress" aria-label="5라운드 중 ${state.round}라운드">${[1,2,3,4,5].map(n => `<i class="${n < state.round ? 'done' : n === state.round ? 'current' : ''}"></i>`).join('')}</div></div>`; }
+  function scores() { return `<div class="scoreboard">${[0,1].map(i => `<div class="score-card">${dot(i)}<span class="score-name">${named(i)}</span><span class="money">${state.money[i]}<small>원</small></span></div>`).join('')}</div>`; }
+  function choose() { return `<section class="play-layout enter">${roundTop()}${scores()}<div class="turn-intro ${state.player ? 'p2' : ''}"><span class="eyebrow">YOUR SECRET MOVE</span><h1><span class="name">${named(state.player)}</span>의 차례예요</h1><p class="subtext">상대는 잠깐 고개를 돌려주세요. 어떤 작전을 펼칠까요?</p></div><div class="action-grid choose-grid">${actionCards(true)}</div><p class="secret-hint">🔒 선택하면 바로 숨겨져요. 한 번 선택한 행동은 바꿀 수 없어요.</p></section>`; }
+  function handoff() { return `<section class="play-layout">${roundTop()}<div class="handoff"><span class="secret-stamp">✓ ${state.player === 1 ? '선택을 안전하게 숨겼어요' : '새 라운드를 준비했어요'}</span><div class="handoff-graphic" aria-hidden="true">📱</div><span class="eyebrow">PASS THE DEVICE</span><h1><strong>${named(state.player)}</strong>에게<br>기기를 넘겨주세요</h1><p class="subtext">화면에는 아무런 단서도 없어요.<br>기기를 받았다면 아래 버튼을 눌러주세요.</p><button class="primary" data-event="ready">기기 받았어요 <span aria-hidden="true">→</span></button><p class="private-note">상대가 보지 않을 때 선택해주세요 🤫</p></div></section>`; }
+  function message() {
+    const [a,b] = state.choices;
+    if (a === 'steal' && b === 'steal') return ['욕심이 통했네… 너무 통했네!', '서로를 노리다가 동전만 잃었어요. 다음엔 눈치껏!'];
+    if (a === 'earn' && b === 'earn') return ['오늘은 둘 다 성실한 부자!', '사이좋게 20원씩. 이 평화, 다음에도 이어질까요?'];
+    if (a === 'guard' && b === 'guard') return ['아무도 안 왔는데, 경비는 철통!', '서로 지키기만 했어요. 동전도 잠시 쉬어갑니다.'];
+    if (a === 'steal' || b === 'steal') return a === 'guard' || b === 'guard' ? ['딱 걸렸어, 귀여운 도둑!', '지키던 상대의 반격! 남은 돈 안에서 최대 15원을 가져가요.'] : ['내 동전… 방금 어디 갔지?', '돈을 벌다가 도둑을 만났어요. 남은 돈 안에서 최대 25원이 이동해요.'];
+    return ['누군가는 지키고, 누군가는 벌고!', '평화로운 밤, 성실하게 일한 사람에게 20원.'];
+  }
+  function result() {
+    const [title, copy] = message();
+    return `<section class="play-layout enter">${roundTop()}<div class="result-intro"><span class="eyebrow">THE BIG REVEAL</span><h1>${title}</h1><p class="subtext">${copy}</p></div><div class="results">${[0,1].map(i => { const m = meta[state.choices[i]], d = state.delta[i]; return `<article class="result-card"><p class="score-name">${dot(i)} ${named(i)}</p><span class="reveal-icon" aria-hidden="true">${m.icon}</span><h2>${m.name}</h2><div class="delta ${d < 0 ? 'loss' : d === 0 ? 'zero' : ''}">${d > 0 ? '+' : d < 0 ? '−' : ''}${Math.abs(d)}원</div><div class="result-total">현재 보유 금액 <b>${state.money[i]}원</b></div></article>`; }).join('')}</div><button class="primary result-next" data-event="next">${state.round === 5 ? '최종 결과 보기' : '다음 라운드'} <span aria-hidden="true">→</span></button></section>`;
+  }
+  function final() {
+    const w = winner(state.money);
+    const confetti = Array.from({length:24}, (_,i) => `<i style="--x:${(i * 37) % 100}%;--delay:${(i % 6) * .12}s;--c:${['#f5a5c5','#f7d976','#bdb0f1','#a6dbc7'][i % 4]}"></i>`).join('');
+    return `<section class="play-layout enter"><div class="final-intro"><div class="confetti" aria-hidden="true">${confetti}</div><span class="eyebrow">FIVE ROUNDS. ONE GREAT DUO.</span><span class="trophy" aria-hidden="true">${w === null ? '🤝' : '🏆'}</span><h1>${w === null ? '완벽한 눈치 싸움,<br><strong>무승부!</strong>' : `<strong>${named(w)}</strong> 승리!`}</h1><p class="subtext">${w === null ? '돈도 마음도 똑같이. 한 판 더 해볼까요?' : '오늘의 동전은 내 것! 사랑은 나눠 갖기로 해요.'}</p></div><div class="results final-score">${[0,1].map(i => `<article class="result-card ${i === w ? 'winner' : ''}">${i === w ? '<span class="winner-label">WINNER</span>' : ''}<p class="score-name">${dot(i)} ${named(i)}</p><div class="final-money">${state.money[i]}<small>원</small></div></article>`).join('')}</div><button class="primary result-next" data-event="reset">다시 하기 <span aria-hidden="true">↻</span></button><p class="private-note">다음 판은 다시 100원부터, 새로운 마음으로.</p></section>`;
+  }
+  function render(first) {
+    clearTimeout(timer);
+    app.innerHTML = ({setup, choose, handoff, reveal:result, final})[state.phase]();
+    // Remove the previous screen immediately. In particular, no outgoing selection
+    // animation, selected class, data attribute, or live-region log is retained.
+    if (state.phase === 'setup') {
+      document.getElementById('start-form').addEventListener('submit', e => { e.preventDefault(); dispatch({ type:'start', names:[document.getElementById('p1').value, document.getElementById('p2').value] }); });
+    }
+    const delay = state.phase === 'handoff' || state.phase === 'reveal' || state.phase === 'final' ? 550 : 250;
+    unlockAt = Date.now() + delay;
+    const controls = Array.from(app.querySelectorAll('[data-action], [data-event]'));
+    controls.forEach(button => { button.disabled = true; });
+    timer = setTimeout(() => controls.forEach(button => { if (button.isConnected) button.disabled = false; }), delay);
+    if (!first) { app.focus({preventScroll:true}); window.scrollTo(0,0); }
+  }
+  function updateSaveStatus() {
+    const label = document.getElementById('save-status');
+    const retry = document.getElementById('retry-save');
+    if (!label) return;
+    const status = records?.status || 'unavailable';
+    label.textContent = ({saved:'✓ 이번 게임 기록을 저장했어요.', failed:'기록을 저장하지 못했어요. 게임 결과는 그대로예요.', setup:'기록 저장 설정이 아직 완료되지 않았어요. 게임은 계속할 수 있어요.', saving:'게임 기록을 저장하고 있어요…', idle:'게임 기록을 저장하고 있어요…', unavailable:'파일·정적 호스팅에서는 기록이 저장되지 않아요.'})[status];
+    if (retry) retry.hidden = !['failed','setup'].includes(status);
+  }
+  records?.onChange(updateSaveStatus);
+  function dispatch(event) {
+    const next = reduce(state, event);
+    if (next === state) return;
+    state = next;
+    if (event.type === 'start') records?.start(state.names);
+    if (state.phase === 'reveal') records?.record(state.round,state.choices);
+    if (event.type === 'reset') records?.reset();
+    render(false);
+    if (state.phase === 'reveal' && state.round === 5) records?.save();
+    if (state.phase === 'final') {
+      const status = document.createElement('p');
+      status.id = 'save-status'; status.className = 'private-note'; status.setAttribute('role','status');
+      const retry = document.createElement('button');
+      retry.id = 'retry-save'; retry.type = 'button'; retry.className = 'quiet save-retry'; retry.hidden = true;
+      retry.textContent = '다시 저장';
+      retry.addEventListener('click', () => records?.save());
+      app.querySelector('.play-layout').append(status,retry);
+      updateSaveStatus();
+      records?.save();
+    }
+  }
+  app.addEventListener('click', e => {
+    const button = e.target.closest('button[data-action],button[data-event]');
+    if (!button || button.disabled || Date.now() < unlockAt) return;
+    button.disabled = true;
+    dispatch(button.dataset.action ? {type:'choose', action:button.dataset.action} : {type:button.dataset.event});
+  });
+  function closeRules() { dialog.close(); }
+  document.querySelector('.rules-open').addEventListener('click', () => { lastFocus = document.activeElement; dialog.showModal(); document.body.classList.add('modal-open'); });
+  document.getElementById('close-rules').addEventListener('click', closeRules);
+  document.getElementById('understood').addEventListener('click', closeRules);
+  dialog.addEventListener('close', () => { document.body.classList.remove('modal-open'); if(lastFocus?.isConnected) lastFocus.focus(); });
+  dialog.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if(e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeRules(); } });
+  render(true);
+})();
+
+</script>
+</body>
+</html>
